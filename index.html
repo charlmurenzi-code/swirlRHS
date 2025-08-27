@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charming Charles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#contacts">Contact</a></li>
+            <li><a href="hotwait.html">Hot Wait</a></li>
+            <li><a href="favgames.html">Fav games</a></li>
+
+        </ul>
+    </header>
+    <main>
+        <div class="img">
+            <img src="Raul_Bautista.png" alt="Game Character">
+        </div>
+        <h1 class="gamer-title">Games, a world with freedom. Your imagination is your limit.</h1>
+        <p class="gamer-desc">
+            This page helps you explore the world of gaming. Reach out to hackclub Rusumo highschool for more info and giveaways of our custom selfmade games tailored to your taste.
+        </p>
+        <div class="gamer-joke">
+            Him:Why bring a ladder to the gamecafe?
+            <br>Me: Just wanted to reach the next level!
+            <br> <strong>Kazuhisa Hashimoto for the NES game Gradius in 1985</strong>
+        </div>
+        <div id="easter-egg" style="display:none; margin-top:30px; text-align:center;">
+            <h2>🎮 You Unlocked a Secret!</h2>
+            <p>Please listen to legends. 4rever at the top groove street</p>
+            <img src="bigsmoke.jpg" alt="Tell CJ meme" style="max-width:320px; width:100%; border-radius:12px; box-shadow:0 0 24px #00ffea88,0 0 32px #ff00cc88; margin-top:18px;">
+        </div>
+        <script>
+        // Konami code: up up down down left right left right B A
+        const code = [38,38,40,40,37,39,37,39,66,65];
+        let pos = 0;
+        document.addEventListener('keydown', function(e) {
+            if (e.keyCode === code[pos]) {
+                pos++;
+                if (pos === code.length) {
+                    document.getElementById('easter-egg').style.display = 'block';
+                    pos = 0;
+                }
+            } else {
+                pos = 0;
+            }
+        });
+        </script>
+    </main>
+    <footer>
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <p>
+                Reach out to Charles at <a href="mailto:charl.murenzi@gmail.com">charl.murenzi@gmail.com</a> or follow him on social media for more gaming adventures.
+            </p>
+        </section>
+    </footer>
+</body>
+</html>

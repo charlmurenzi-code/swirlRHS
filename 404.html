@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .notfound-container {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .notfound-title {
+            font-size: 4em;
+            color: #ff00cc;
+            text-shadow: 0 0 24px #00ffea, 0 0 48px #ff00cc;
+            font-family: 'Orbitron', 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
+            margin-bottom: 20px;
+            animation: titlePulse 2.5s infinite alternate;
+        }
+        .notfound-desc {
+            font-size: 1.5em;
+            color: #fff;
+            text-shadow: 0 0 12px #00ffea44;
+            margin-bottom: 40px;
+        }
+        .notfound-btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 1.2em;
+            color: #fff;
+            background: linear-gradient(90deg, #00ffea 0%, #ff00cc 100%);
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 0 16px #00ffea88, 0 0 32px #ff00cc44;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .notfound-btn:hover {
+            transform: scale(1.08) rotate(-2deg);
+            box-shadow: 0 0 32px #ff00cc, 0 0 48px #00ffea;
+            color: #232526;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#contacts">Contact</a></li>
+            <li><a href="hotwait.html">Hot Wait</a></li>
+            <li><a href="favgames.html">Fav games</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="notfound-container">
+            <div class="notfound-title">404</div>
+            <div class="notfound-desc">Oops! The page you are looking for does not exist.<br>
+                Maybe it falled in the minecraft void...</div>
+            <a href="index.html" class="notfound-btn">Return Home</a>
+        </div>
+    </main>
+    <footer>
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <p>Reach out to Charles at <a href="mailto:charl.murenzi@gmail.com">charl.murenzi@gmail.com</a> or follow him on social media for more gaming adventures.</p>
+        </section>
+    </footer>
+</body>
+</html>
